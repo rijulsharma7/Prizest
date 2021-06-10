@@ -1,13 +1,363 @@
-<!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <link rel="stylesheet" href="{% static 'website/stylesheet.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Prizest</title>
 </head>
 <body>
-    <a href="{% url 'login' %}">LOGIN</a><br>
-    <a href="{% url 'signup' %}">SIGNUP</a>
+    <div class="navbar">
+        <div class="logo">
+            <img src= "{% static 'img/P chota.png' %}" alt="this is logo">
+        </div>
+        <nav>
+            <ul>
+            <li><a href="{% url 'index' %}">Home  </a></li>
+            
+            <li><a href="#">About</a></li>
+            <li><a href="{% url 'signup' %}">Singup</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+        </ul>
+        </nav>
+        <img src="{% static 'img/cart.png' %}" width="30px" height="30px" alt="cart">
+    </div>
+
+    <div class="header">
+        
+    <div class="container">
+    
+    <div class="row">
+        <div class="col-2">
+            <h1> A Price so good,  <br> It feels like a Prize ! </h1>
+            <p>No more hassle of last minute price comparisions. <br>Get the best price across leading E-commerce Websites <br> such as Amazon, Flipkart and Ebay </p>
+            <a href="" class="btn" >Explore Now &#8594; </a>
+        </div>
+        <div class="col-2">
+            <img src="{% static 'img/image1.png' %}" alt="image">
+        </div>
+    </div>
+
+    </div>
+</div>
+
+
+
+   
+<!-------featured products------->
+    <div class="small-container">
+        <h2 class="title">Feauted Products </h2>
+        <div class="row">
+            <div class="row">
+            <div class="col-4">
+                <img src="{% static 'img/boat1.jpg' %}" alt="">
+                <h4>boAt Rockerz 450 Bluetooth Headset  (Luscious Black, On the Ear)</h4>
+                <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+                
+                </div>
+                <div class="col-2">
+                <p>₹1,499</p>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.flipkart.com/boat-rockerz-450-bluetooth-headset/p/itmdb79a9c0cb56f?pid=ACCFEHZ8GSGWMMSD&lid=LSTACCFEHZ8GSGWMMSDXIRNEY&marketplace=FLIPKART&store=0pm%2Ffcn&srno=b_1_1&otracker=hp_omu_Headphones%2B%2526%2BSpeakers_3_14.dealCard.OMU_PH246SI7OLAG_9&otracker1=hp_omu_WHITELISTED_neon%2Fmerchandising_Headphones%2B%2526%2BSpeakers_NA_dealCard_cc_3_NA_view-all_9&fm=neon%2Fmerchandising&iid=b9bbe1a6-4637-4ca5-9889-3874229cc4d1.ACCFEHZ8GSGWMMSD.SEARCH&ppt=browse&ppn=browse&ssid=y3o4idwblc0000001620657821290" class="btn" >View &#8594; </a>
+                    </div>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'img/pixel1.jpg' %}" alt="">
+                <h4>Google Pixel 4a (Just Black, 128 GB)  (6 GB RAM)</h4>
+                <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+                
+                </div>
+                <div class="col-2">
+                <p>₹29,999</p>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.flipkart.com/google-pixel-4a-just-black-128-gb/p/itm023b9677aa45d?pid=MOBFUSBNAZGY7HQU&lid=LSTMOBFUSBNAZGY7HQUWHTF0C&otracker=clp_banner_1_6.bannerX3.BANNER_flagship-fest-35d6-19w7-store_V02VYLY9VORC&fm=neo%2Fmerchandising&iid=M_5994d1bf-d89c-46a0-a9e3-7ef55867d32c_6.V02VYLY9VORC&ppt=hp&ppn=homepage" class="btn" >View &#8594; </a>
+                    </div>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'img/electro1.jpg' %}" alt="">
+                <h4>Electro 2 IDP Sneakers For Men  (Multicolor)</h4>
+                <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+                
+                </div>
+                <div class="col-2">
+                <p>₹1,559</p>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.flipkart.com/puma-electro-2-idp-sneakers-men/p/itmedd3fc960e4c3?pid=SHOFYBAAGWRPKD5T&lid=LSTSHOFYBAAGWRPKD5TGWNBGO&marketplace=FLIPKART&store=osp%2Fcil&srno=b_1_34&otracker=hp_omu_Fashion%2BFor%2BEveryone_3_14.dealCard.OMU_VPVKQ54UBPX8_9&otracker1=hp_omu_WHITELISTED_neon%2Fmerchandising_Fashion%2BFor%2BEveryone_NA_dealCard_cc_3_NA_view-all_9&fm=neon%2Fmerchandising&iid=en_3Tsi5QW43hBPeqML0sN3r5v%2BTdCCyRh0cuZuyL9ixHO%2Bw9xZ6dtK5UHgB7KrtDovmngg3u03Clq8sj6COhsA%2FA%3D%3D&ppt=browse&ppn=browse&ssid=68sf8lc5b40000001620658039999" class="btn" >View &#8594; </a>
+                    </div>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'img/military.jpg' %}" alt="">
+                <h4>Military Camouflage Men Polo Neck Grey T-Shirt</h4>
+                <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+                
+                </div>
+                <div class="col-2">
+                <p>₹472</p>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.flipkart.com/metronaut-military-camouflage-men-polo-neck-grey-t-shirt/p/itma3468edfcbd3f?pid=TSHFRDMJYEAUTHUQ&lid=LSTTSHFRDMJYEAUTHUQQWHNUC&marketplace=FLIPKART&store=clo%2Fash%2Fank%2Fedy&srno=b_1_1&otracker=hp_rich_navigation_2_1.navigationCard.RICH_NAVIGATION_Fashion~Men%2527s%2BTop%2BWear~Men%2527s%2BT-Shirts_IF56C41VGEYS&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_2_L2_view-all&fm=organic&iid=en_q7km4YcOea0pvsy7Iq1%2B83p1SG%2FqPepyRKtPhOUNYsnfgf79l4qMxHKKo4H6gg1t0cx0KjVJxBXqBtInTYpwmw%3D%3D&ppt=browse&ppn=browse&ssid=jsfssi6lvk0000001620658092900" class="btn" >View &#8594; </a>
+                    </div>
+            </div>
+            </div>
+            <br><br>
+            <div class="row">
+            <div class="col-4">
+                <img src="{% static 'img/samsung.jpg' %}" alt="">
+                <h4>SAMSUNG 80 cm (32 inch) HD Ready LED Smart TV 2020 Edition  (UA32T4340AKXXL)</h4>
+                <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+                
+                </div>
+                <div class="col-2">
+                <p>₹16,999</p>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.flipkart.com/samsung-80-cm-32-inch-hd-ready-led-smart-tv-2020/p/itma5db0294e13fe?pid=TVSFQXFKMHUDYCJ3&lid=LSTTVSFQXFKMHUDYCJ3IOJXHJ&marketplace=FLIPKART&store=ckf%2Fczl&srno=b_1_1&otracker=browse&fm=organic&iid=28f9d6f3-d20d-4774-a7f1-23216ef2ee17.TVSFQXFKMHUDYCJ3.SEARCH&ppt=browse&ppn=browse&ssid=wl2p0u8cwg0000001620658143202" class="btn" >View &#8594; </a>
+                    </div>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'img/oven.jpg' %}" alt="">
+                <h4>IFB 30 L Convection Microwave Oven  (30FRC2, Black)</h4>
+                <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+                
+                </div>
+                <div class="col-2">
+                <p>₹13,490</p>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.flipkart.com/ifb-30-l-convection-microwave-oven/p/itmeftrwdw5pmwnh?pid=MRCEFTRWYHXDHPDA&lid=LSTMRCEFTRWYHXDHPDASMR2RU&marketplace=FLIPKART&store=j9e%2Fm38%2Fo49&srno=b_1_2&otracker=clp_banner_1_8.bannerX3.BANNER_microwave-oven-store_5QXLKY5LZNRZ&fm=neo%2Fmerchandising&iid=9c68befe-12f4-4124-a5fa-e029d3b1724f.MRCEFTRWYHXDHPDA.SEARCH&ppt=clp&ppn=microwave-oven-store&ssid=sbyrmo6yk00000001620658205791" class="btn" >View &#8594; </a>
+                    </div>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'img/thermometer.jpg' %}" alt="">
+                <h4>K-Life KLT-100 Digital Thermometer with storage case</h4>
+                <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+                
+                </div>
+                <div class="col-2">
+                <p>₹299</p>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.amazon.in/K-Life-KLT-100-Digital-Thermometer-White/dp/B07HHHTRQZ/ref=lp_21505763031_1_5" class="btn" >View &#8594; </a>
+                    </div>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'img/mask.jpg' %}" alt="">
+                <h4>Mediweave K95 Face Mask (White) - Pack of 5</h4>
+                <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+                
+                </div>
+                <div class="col-2">
+                <p>₹399</p>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.amazon.in/Mediweave-KN95-Willow-shaped-4-ply/dp/B089XY2RMX/?_encoding=UTF8&pd_rd_w=n0UZF&pf_rd_p=d840980e-926d-4f25-9115-4c035c061def&pf_rd_r=7Y8RXDQDKRQ74YQ5GS84&pd_rd_r=c29c8805-23e9-4ca6-b3db-75524461e6d3&pd_rd_wg=r0ihO&ref_=pd_gw_unk" class="btn" >View &#8594; </a>
+                    </div>
+            </div>
+            </div>
+            <br><br>
+            <div class="row">
+            <div class="col-4">
+                <img src="{% static 'img/pajama.jpg' %}" alt="">
+                <h4>ENDEAVOUR WEAR Men's Lycra Stretchable Regular Fit Joggers Track Pant Lower Payjama </h4>
+                <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+                
+                </div>
+                <div class="col-2">
+                <p>₹499</p>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.amazon.in/ENDEAVOUR-WEAR-Stretchable-Regular-Joggers/dp/B08Z3LWZ8K/ref=sr_1_11?dchild=1&fst=as%3Aoff&pf_rd_i=1968024031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=2a6463b7-5f6e-4760-a2ef-50ba07f05487%2C3818f0c9-a03d-4d4e-8a5b-be428afd4787%2Cebc3a412-ae34-4d92-89ac-a4afe3e0b318&pf_rd_r=BXNFAG0Z9DGCYS450RC1&pf_rd_s=merchandised-search-17%2Cmerchandised-search-7%2Cmobile-hybrid-17&pf_rd_t=30901&qid=1620658534&refinements=p_72%3A1318477031%2Cp_36%3A-59900&rnid=1571272031&s=apparel&sr=1-11" class="btn" >View &#8594; </a>
+                    </div>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'img/hershey.jpg' %}" alt="">
+                <h4>Hershey's Creamy Milk, Whole Almonds & Cookies n CrÃ¨me Chocolate Bar, 100g (Pack of 3)</h4>
+                <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+                
+                </div>
+                <div class="col-2">
+                <p>₹599</p>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.amazon.in/dp/B0834TDKJ2/ref=s9_acsd_al_bw_c2_x_2_i?pf_rd_m=A1K21FY43GMZF8&pf_rd_s=merchandised-search-2&pf_rd_r=HVD6FCW28N71AYMB5JVA&pf_rd_t=101&pf_rd_p=34ab24fe-66d9-4a4c-9fd2-cd69a355d87e&pf_rd_i=13993588031" class="btn" >View &#8594; </a>
+                    </div>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'img/kettle.jpg' %}" alt="">
+                <h4>Prestige 1.2 Litre Kettle 1200-watts, Maroon</h4>
+                <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+                
+                </div>
+                <div class="col-2">
+                <p>₹1,450</p>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.amazon.in/Prestige/dp/B08FCZ2HYL/?_encoding=UTF8&pd_rd_w=b5NI7&pf_rd_p=e60c70f0-0541-4ba5-b6fc-ada95198a5fe&pf_rd_r=TT2KFV3YQKRMS7BR3ESJ&pd_rd_r=b04f7fa5-cf5b-433b-90a9-ab69c89b69ab&pd_rd_wg=mUn8m&ref_=pd_gw_crs_zg_bs_976442031" class="btn" >View &#8594; </a>
+                    </div>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'img/watch.jpg' %}" alt="">
+                <h4>Casio Enticer Chronograph Black Dial Men's Watch - MTP-1374L-1AVDF (A834)
+                    </h4>
+                <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+                
+                </div>
+                <div class="col-2">
+                <p>₹4,695</p>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.amazon.in/Casio-Enticer-Multi-Watch-MTP-1374L-1AVDF-A834/dp/B00GRROOOS/ref=sr_1_2?dchild=1&fst=as%3Aoff&pf_rd_i=2563504031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=f5c725bb-9e36-4d56-a19c-b4937909514a&pf_rd_r=W1MAJA7B0769DBDT1PBR&pf_rd_s=merchandised-search-7&qid=1620658898&refinements=p_89%3ACasio&rnid=3837712031&s=watch&sr=1-2" class="btn" >View &#8594; </a>
+                    </div>
+            </div>
+            </div>
+            <br><br>
+<!-------Offer------->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="{% static 'img/i.png' %}" class="offerimg">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available on RedStore</p>
+                <h1>Apple Watch Series 3 </h1>
+                <p>(GPS, 42mm) - Space Grey Aluminium Case with Black Sport Band </p>  
+                <a href="https://www.amazon.in/Apple-Watch-Smart-Space-Aluminum/dp/B075R9P7H8/ref=sr_1_1?dchild=1&keywords=iwatch&qid=1620660879&s=computers&sr=1-1" class="btn">Buy Now &#8594</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-------testimonial------->
+    
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="{% static 'img/flip.jpg' %}" alt="">
+            </div>
+            <div class="col-5">
+                <img src="{% static 'img/amazon.jpeg' %}" alt="">
+            </div>
+            <div class="col-5">
+                <img src="{% static 'img/ebay.jpg' %}" alt="">
+            </div>
+            <div class="col-5">
+                <img src="{% static 'img/logo4.png' %}" alt="">
+            </div>
+            <div class="col-5">
+                <img src="{% static 'img/myntra.jpg' %}" alt="">
+            </div>
+           
+        </div>
+    </div>
+</div>
+<!-------footer------->
+<div class="footer">
+    <div class="containter">
+        <div class="row">
+            <div class="footer-col-1">
+               <h3> Download Our App</h3>
+                <p> Download App for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="{% static 'img/play-store.png' %}" alt="">
+                    <img src="{% static 'img/app-store.png' %}" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="{% static 'img/P2.png' %}" alt="">
+                 <p> Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many</p>
+             </div>
+             <div class="footer-col-3">
+                <h3> Useful Lnks</h3>
+                <ul>
+                    <li>Coupons </li>
+                    <li> Blog Post</li>
+                    <li>Return Policy </li>
+                    <li>Join Affiliate </li>
+                </ul>
+                 
+             </div>
+             <div class="footer-col-4">
+                <h3> Follow us</h3>
+                <ul>
+                    <li>Facebook </li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+                 
+             </div>
+        </div>
+        <hr>
+        <p class="copyright"> &#169; Copyright 2021 -Nidhi Bhasker</p>
+    </div>
+</div>
 </body>
 </html>
